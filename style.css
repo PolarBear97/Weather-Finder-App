@@ -1,0 +1,73 @@
+@media only screen and (max-width: 992px) {
+  body {
+    background: url(cold.jpg);
+    color: white;
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 22px;
+  }
+  div{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: transparent; 
+  }
+  p{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;;
+    background-color: transparent; 
+  }
+}
+
+@media only screen and (min-width: 768px){
+  body {
+    background: url(cold.jpg);
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 16px;
+  }
+  div{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    background-color: transparent; 
+  }
+  p{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    padding: 5px;
+    background-color: transparent; 
+  }
+}
+
+@media only screen and (min-width: 600px){
+  body {
+    background: url(cold.jpg);
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 18px;
+    align-content: center;
+    color: white;
+  }
+  div{
+    display: inline-block;
+    width: 100%;
+    height: 75%;
+    padding: 15px;
+       
+    background-color: transparent; 
+  }
+  p{
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    padding: 5px;
+    background-color: transparent; 
+  }
+}
+

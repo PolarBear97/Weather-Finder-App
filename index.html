@@ -1,35 +1,30 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>Weather Finder App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="bodyBackground">
   <h1>Welcome to the Weather Finder App</h1>
-  <form>
-    <label for="cityInput">Enter City:</label>
-    <input type="text" id="cityInput" name="cityInput">
-    <label for="zipInput">Enter Zip Code:</label>
-    <input type="text" id="zipInput" name="zipInput"><br></br>
-    <button>Enter</button>
+  <form id="myForm">
+    <label for="city-input">Enter City:</label>
+    <input type="text" id="city-input" name="cityInput" placeholder="Enter a city" autocomplete="off">
+    <label for="countryInput">Enter Country:</label>
+    <input type="text" id="country-input" name="country-input" placeholder="Enter a country"><br></br>
+    <button type="click" text="enter" class="btn">Find Weather</button>
   </form>
   <div id="weather-display"></div>
-  <div id="side-display"></div>
-
+  <div id="mini-display"></div>
+  <div id="second-display"></div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
 </body>
-<!--<footer>copyright@footer.madeup</footer-->
 
 </html>
