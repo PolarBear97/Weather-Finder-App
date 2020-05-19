@@ -36,10 +36,10 @@ Phone Home Screen:
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|May 12| Core HTML/JavaScript functionality | Incomplete
-|May 13| Axios requests/ connecting endpoints  | Incomplete
-|May 14| styling all elements of page | Incomplete
-|May 15| Try out app again to ensure there are no remaining errors | Incomplete
+|May 12| Core HTML/JavaScript functionality(event handler, background and color changer.)| Complete
+|May 13| Axios requests/ connecting endpoints (get requests) | Complete
+|May 14| styling all elements of page(divs, headers, colors and responsiveness, google fonts)| Complete
+|May 15| Try out app again to ensure there are no remaining errors(event handle works, city search works.)| Complete
 
 ## Priority Matrix
 
@@ -50,13 +50,26 @@ Javascript functionality, axios and testing are all highly prioritized.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Psuedocode | L | 3hrs| ? | ? |
-| HTML Structure | L | 4.5hrs| ? | ? |
-| CSS Design | L | 4hrs| ? | ? |
-| Javascript | M | 3.5hrs| ? | ? |
-| Functionality | M | 5hrs| ? | ? |
-| Axios & Endpoints | H | 4.5hrs| ? | ? |
-| Testing/Debugging | H | 4hrs| ? | ? |
+| Psuedocode | L | 3hrs| 3 | 3 |
+| HTML Structure | L | 4.5hrs| 4 | 4 |
+| CSS Design | L | 4hrs| 1 | 1 |
+| Javascript | M | 3.5hrs| 3.5 | 3.5 |
+| Functionality | M | 5hrs| 5 | 5 |
+| Axios & Endpoints | H | 4.5hrs| 10.5 | 10.5 |
+| Testing/Debugging | H | 4hrs| 4 | 4 |
 | Total |  | 30hrs| ? | ? |
 
 ## Code Snippet
+
+tempMid = response.data.main.temp;
+    function backgroundChange() {
+      if (tempMid > 60) {
+        document.body.style.background = "url('sunset.jpg')";
+        document.body.style.color = "black"
+      }
+      else {
+        document.body.style.background = "url('cold.jpg')";
+        document.body.style.color = "white"
+      }
+    }
+    backgroundChange()
