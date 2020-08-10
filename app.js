@@ -2,14 +2,12 @@
 const titleDisplay = document.getElementById("title-display");
 const weatherDisplay = document.getElementById("weather-display");
 const secondDisplay = document.getElementById('second-display');
-const btn = document.getElementById('btn');
 
 let myVideo = document.getElementById('myVideo');
 let source = document.createElement('source');
 source.setAttribute('src', 'Sunny.mp4');
 source.setAttribute('type', 'video/mp4')
 myVideo.appendChild(source);
-
 
 const titleText = document.createElement('h1');
 titleDisplay.append(titleText);
@@ -39,10 +37,8 @@ const getWeather = async (city, country) => {
     const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=imperial&APPID=5d3ba2952069c3dd1e8cd28c12cd4040`);
     console.log(response.data);
     console.log(response.data.name + ",  " + response.data.sys.country);
-
     titleDisplay.append(titleText);
     titleText.textContent = response.data.name + "," + response.data.sys.country;
-
     skyChanger = response.data.weather[0].main;
     console.log(skyChanger)
     function backgroundChange() {
@@ -52,23 +48,19 @@ const getWeather = async (city, country) => {
         myVideo.load();
         myVideo.play();
         document.body.style.color = "black"
-        btn.style.color = "black"
-        
-      }else if(skyChanger == "Thunerstorm"){
+      } else if (skyChanger == "Thunerstorm") {
         myVideo.pause();
         source.setAttribute('src', 'Rainy.mp4')
         myVideo.load();
         myVideo.play();
         document.body.style.color = "black"
-        btn.style.color = "black"
       }
-      else{
+      else {
         myVideo.pause();
         source.setAttribute('src', 'Sunny.mp4')
         myVideo.load();
         myVideo.play();
         document.body.style.color = "white"
-        btn.style.color = "white"
       }
     }
     backgroundChange()
