@@ -7,23 +7,38 @@
   <title>Weather Finder App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="bodyBackground">
-  <h1>Welcome to the Weather Finder App</h1>
+  <video autoplay muted loop id="myVideo"></video>
+  
   <form id="myForm">
-    <label for="city-input">Enter City:</label>
-    <input type="text" id="city-input" name="cityInput" placeholder="Enter a city" autocomplete="off">
-    <label for="countryInput">Enter Country:</label>
-    <input type="text" id="country-input" name="country-input" placeholder="Enter a country"><br></br>
-    <button type="click" text="enter" class="btn">Find Weather</button>
+    <div class="container_row">
+      <h1>Weather Finder</h1>
+      <div class="layer1">
+       
+        <input type="text" id="city-input" name="cityInput" placeholder="Enter a city">
+      </div>
+      <div class="layer2">
+   
+        <input type="text" id="country-input" name="countryInput" placeholder="Enter a country">
+      </div>
+      <button type="click" text="enter" class="btn">Find Weather</button>
+    </div>
+    
   </form>
   <div id="title-display"></div>
   <div id="weather-display"></div>
-  <div id="mini-display"></div>
   <div id="second-display"></div>
+  <footer>
+    <div id="div-social-media">
+      <p><a href="https://github.com/PolarBear97" class="fa fa-github"></a> <a href="https://www.linkedin.com/in/peter-skrzypczak/" class="fa fa-linkedin"></a></p>
+      <div></div> 
+    </div> 
+  </footer>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>
 </body>

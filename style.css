@@ -1,39 +1,156 @@
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 1800px) {
   body {
-    background: url(cold.jpg);
     color: white;
     text-align: center;
-    font-family: 'Pangolin', cursive;
+    font-family: 'Heebo', sans-serif;
     font-size: 22px;
+    overflow-x: hidden;
+  }
+  #myForm {
+    display: inline-block;
+    text-align: center;
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow-x: hidden;
   }
   div{
-    display: inline-block;
+
     width: 50%;
     height: 100%;
     padding: 5px;
     background-color: transparent; 
   }
   p{
-    display: inline-block;
+
     width: 100%;
     height: 100%;
     padding: 5px;;
     background-color: transparent; 
   }
+  
   input[type=text] {
-    width: 100%;
+    width: 10%;
     padding: 12px 20px;
     margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  footer{
+    background-color: black;
     box-sizing: border-box;
+    color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 9%;
+    display: inline-block;
+  }
+  .btn {
+    background-color: transparent; 
+    border: none;
+    padding: 22px 22px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    border-radius: 50%;
+  }
+  .btn:hover {
+    background-color: lightgray; 
+  }
+  .fa {
+    padding: 30px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-linkedin {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fa-github {
+    background: white;
+    color: black;
+    display: inline-block;
+  }
+  a:link {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:active {
+    color: black;
+    background: white;
+    text-decoration: none;
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
   body {
-    background: url(cold.jpg);
+    color: white;
     text-align: center;
-    font-family: 'Pangolin', cursive;
+    font-family: 'Heebo', sans-serif;
     font-size: 16px;
+  }
+  #myForm {
+    display: inline-block;
+    text-align: center;
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow-x: hidden;
   }
   div{
     display: inline-block;
@@ -49,31 +166,243 @@
     padding: 5px;
     background-color: transparent; 
   }
+  h2{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    padding: 5px;
+    background-color: transparent; 
+  }
+  input[type=text] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  footer{
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 9%;
+    display: inline-block;
+  }
+  .btn {
+    background-color: transparent; 
+    border: none;
+    padding: 15px 22px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    border-radius: 50%;
+  }
+  .btn:hover {
+    background-color: lightgray; 
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-linkedin {
+    background: white;
+    color: black;
+  }
+  .fa-github {
+    background: white;
+    color: black;
+  }
+  a:link {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:active {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  .copyright {
+    background: black;
+    color: white;
+    text-align: center;
+  }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 300px){
   body {
-    background: url(cold.jpg);
     text-align: center;
-    font-family: 'Pangolin', cursive;
+    font-family: 'Heebo', sans-serif;
     font-size: 18px;
     align-content: center;
     color: white;
+  }
+  #myForm {
+    display: inline-block;
+    text-align: center;
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
   }
   div{
     display: inline-block;
     width: 100%;
     height: 75%;
-    padding: 15px;
-       
+    padding: 0px, 0px, 0px, 0px;
+    text-align: center;   
+    align-content: center;
     background-color: transparent; 
   }
   p{
     display: inline-block;
-    width: 10%;
+    width: 50%;
     height: 100%;
-    padding: 5px;
+    padding: 0px;
     background-color: transparent; 
+  }
+  input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  footer{
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 9%;
+    display: inline-block;
+  }
+  .btn {
+    background-color: transparent; 
+    border: none;
+    padding: 15px 22px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    border-radius: 50%;
+  }
+  .btn:hover {
+    background-color: lightgray; 
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-linkedin {
+    background: white;
+    color: black;
+  }
+  .fa-github {
+    background: white;
+    color: black;
+  }
+  a:link {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  a:active {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  .copyright {
+    background: black;
+    color: white;
+    text-align: center;
   }
 }
 
